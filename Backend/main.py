@@ -1,5 +1,5 @@
 from team import Team
-from league import League
+from Backend.league import League
 
 def main():
     # Create an instance of the League
