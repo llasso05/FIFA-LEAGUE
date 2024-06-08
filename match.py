@@ -1,8 +1,10 @@
 class Match:
-    def __init__(self, team1, team2, venue):
+    def __init__(self, id, team1, team2, venue, tournament_id):
+        self.id = id
         self.team1 = team1
         self.team2 = team2
         self.venue = venue
+        self.tournament_id = tournament_id
         self.team1_goals = 0
         self.team2_goals = 0
         self.played = False
@@ -27,3 +29,4 @@ class Match:
         else:
             self.team1.points += 1
             self.team2.points += 1
+
